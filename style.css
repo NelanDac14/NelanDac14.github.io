@@ -19,3 +19,153 @@ section {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacto-item img {
+    margin-right: 10px;
+}
+
+.contacto-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contacto-item a:hover {
+    color: #25D366; /* verde tipo WhatsApp */
+}
+
+.sobre-mi {
+    background: #f9fafb;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.sobre-mi h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #111;
+    position: relative;
+}
+
+.sobre-mi h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #25D366;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+}
+
+.sobre-mi-contenido p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sobre-mi-contenido .highlight {
+    background: #e6f9f0;
+    padding: 12px;
+    border-left: 4px solid #25D366;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.proyectos {
+    margin-top: 30px;
+}
+
+.proyectos h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.proyectos h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #007bff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.proyecto-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.proyecto-card h3 {
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.proyecto-card .tech {
+    font-size: 14px;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.proyecto-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.proyecto-card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.proyecto-card a:hover {
+    color: #0056b3;
+}
+
+.en-progreso {
+    border: 2px dashed #ccc;
+    background: #fafafa;
+}
+
+.en-progreso .tech {
+    color: #999;
+}
+
+.en-progreso::after {
+    content: "En desarrollo";
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    background: #ffc107;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
