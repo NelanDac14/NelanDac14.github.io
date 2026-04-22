@@ -4,6 +4,12 @@ body {
     background-color: #f5f5f5;
 }
 
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -56,6 +62,7 @@ section {
     position: relative;
 }
 
+/*Línea verde debajo Sub-título*/
 .sobre-mi h2::after {
     content: "";
     width: 50px;
@@ -187,6 +194,7 @@ section {
 }
 
 .subtitle {
+    text-align: center;
     font-size: 18px;
     color: #cbd5f5;
     margin-bottom: 20px;
@@ -230,7 +238,22 @@ section {
 }
 
 .skills h2 {
+    font-size: 26px;
     margin-bottom: 15px;
+    color: #111;
+    position: relative;
+}
+
+/*Línea verde debajo Sub-título*/
+.skills h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #25D366;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
 }
 
 .skills-container {
@@ -291,6 +314,27 @@ section {
     margin-top: 40px;
 }
 
+
+
+.servicios h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #111;
+    position: relative;
+}
+
+/*Línea verde debajo Sub-título*/
+.servicios h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #25D366;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+}
+
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -316,6 +360,12 @@ html {
     font-size: 14px;
 }
 
+.footer-information{
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
 body {
     margin: 0;
 }
@@ -325,12 +375,6 @@ body {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 2px;
-}
-
-.subtitle {
-    font-size: 18px;
-    color: #cbd5f5;
-    margin-bottom: 20px;
 }
 
 .servicio-card {
@@ -356,7 +400,23 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-p {
-    text-align: justify;
-    line-height: 1.5;
+.contacto {
+    margin-top: 30px;
+}
+
+.contacto h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contacto h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
 }
