@@ -424,8 +424,8 @@ body {
 
 .orbital-system {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 550px;
+    height: 450px;
     margin: 0 auto 50px;
     z-index: 0;
 }
@@ -496,6 +496,34 @@ body {
     animation-duration: 26s;
 }
 
+.orbit-6 {
+    width: 430px;
+    height: 430px;
+    --radius: 220px;
+    animation-duration: 30s;
+}
+
+.orbit-7 {
+    width: 470px;
+    height: 470px;
+    --radius: 240px;
+    animation-duration: 34s;
+}
+
+.orbit-8 {
+    width: 510px;
+    height: 510px;
+    --radius: 260px;
+    animation-duration: 38s;
+}
+
+.orbit-9 {
+    width: 550px;
+    height: 550px;
+    --radius: 280px;
+    animation-duration: 42s;
+}
+
 .moon {
     position: absolute;
     top: 50%;
@@ -531,6 +559,10 @@ body {
 .orbit-3 .moon img { animation-duration: 18s; }
 .orbit-4 .moon img { animation-duration: 22s; }
 .orbit-5 .moon img { animation-duration: 26s; }
+.orbit-6 .moon img { animation-duration: 30s; }
+.orbit-7 .moon img { animation-duration: 34s; }
+.orbit-8 .moon img { animation-duration: 38s; }
+.orbit-9 .moon img { animation-duration: 42s; }
 
 .moon img:hover {
     transform: translate(-50%, -50%) scale(1.2);
