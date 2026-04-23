@@ -315,7 +315,6 @@ section {
 }
 
 
-
 .servicios h2 {
     font-size: 26px;
     margin-bottom: 15px;
@@ -360,7 +359,7 @@ html {
     font-size: 14px;
 }
 
-.footer-information{
+.footer-information {
     text-align: center;
     color: #777;
     font-size: 14px;
@@ -397,7 +396,7 @@ body {
     object-fit: cover;
     border: 4px solid #25D366;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .contacto {
@@ -419,4 +418,153 @@ body {
     left: 0;
     bottom: -5px;
     border-radius: 2px;
+}
+
+/* ===== ORBITAL DE HABILIDADES ===== */
+
+.orbital-system {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 50px;
+    z-index: 0;
+}
+
+.planet {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #25D366;
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+    z-index: 10;
+}
+
+.planet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    animation: rotate linear infinite;
+    z-index: 1;
+}
+
+.orbit-1 {
+    width: 230px;
+    height: 230px;
+    --radius: 120px;
+    animation-duration: 10s;
+}
+
+.orbit-2 {
+    width: 270px;
+    height: 270px;
+    --radius: 140px;
+    animation-duration: 14s;
+}
+
+.orbit-3 {
+    width: 310px;
+    height: 310px;
+    --radius: 160px;
+    animation-duration: 18s;
+}
+
+.orbit-4 {
+    width: 350px;
+    height: 350px;
+    --radius: 180px;
+    animation-duration: 22s;
+}
+
+.orbit-5 {
+    width: 390px;
+    height: 390px;
+    --radius: 200px;
+    animation-duration: 26s;
+}
+
+.moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translateX(var(--radius));
+    z-index: 5;
+}
+
+.moon:hover {
+    z-index: 50;
+}
+
+.moon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    background: #0f172a;
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow:
+            0 0 10px rgba(0,0,0,0.6),
+            0 0 12px rgba(37,211,102,0.5);
+    transition: all 0.3s ease;
+    animation: counterRotate linear infinite;
+    z-index: 20;
+}
+
+.orbit-1 .moon img { animation-duration: 10s; }
+.orbit-2 .moon img { animation-duration: 14s; }
+.orbit-3 .moon img { animation-duration: 18s; }
+.orbit-4 .moon img { animation-duration: 22s; }
+.orbit-5 .moon img { animation-duration: 26s; }
+
+.moon img:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow:
+            0 0 20px rgba(37,211,102,0.9),
+            0 0 30px rgba(37,211,102,0.6);
+}
+
+.orbital-system:hover .orbit {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes counterRotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.orbit {
+    pointer-events: none;
+}
+
+.moon img {
+    pointer-events: auto;
 }
