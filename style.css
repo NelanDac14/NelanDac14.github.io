@@ -233,6 +233,10 @@ section {
     color: #0f172a;
 }
 
+.btn.cv:hover {
+    background: #0056b3;
+}
+
 .skills {
     margin-top: 40px;
 }
@@ -546,29 +550,53 @@ body {
     background: #0f172a;
     padding: 6px;
     border-radius: 50%;
-    box-shadow:
-            0 0 10px rgba(0,0,0,0.6),
-            0 0 12px rgba(37,211,102,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6),
+    0 0 12px rgba(37, 211, 102, 0.5);
     transition: all 0.3s ease;
     animation: counterRotate linear infinite;
     z-index: 20;
 }
 
-.orbit-1 .moon img { animation-duration: 10s; }
-.orbit-2 .moon img { animation-duration: 14s; }
-.orbit-3 .moon img { animation-duration: 18s; }
-.orbit-4 .moon img { animation-duration: 22s; }
-.orbit-5 .moon img { animation-duration: 26s; }
-.orbit-6 .moon img { animation-duration: 30s; }
-.orbit-7 .moon img { animation-duration: 34s; }
-.orbit-8 .moon img { animation-duration: 38s; }
-.orbit-9 .moon img { animation-duration: 42s; }
+.orbit-1 .moon img {
+    animation-duration: 10s;
+}
+
+.orbit-2 .moon img {
+    animation-duration: 14s;
+}
+
+.orbit-3 .moon img {
+    animation-duration: 18s;
+}
+
+.orbit-4 .moon img {
+    animation-duration: 22s;
+}
+
+.orbit-5 .moon img {
+    animation-duration: 26s;
+}
+
+.orbit-6 .moon img {
+    animation-duration: 30s;
+}
+
+.orbit-7 .moon img {
+    animation-duration: 34s;
+}
+
+.orbit-8 .moon img {
+    animation-duration: 38s;
+}
+
+.orbit-9 .moon img {
+    animation-duration: 42s;
+}
 
 .moon img:hover {
     transform: translate(-50%, -50%) scale(1.2);
-    box-shadow:
-            0 0 20px rgba(37,211,102,0.9),
-            0 0 30px rgba(37,211,102,0.6);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.9),
+    0 0 30px rgba(37, 211, 102, 0.6);
 }
 
 .orbital-system:hover .orbit {
